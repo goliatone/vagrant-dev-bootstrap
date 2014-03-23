@@ -17,7 +17,7 @@ class { "apt_get::update":
 class { 'tools':
     stage => second,
 }
- 
+
 class {'php':
     stage => third,
 }
@@ -37,5 +37,5 @@ include redis
 include nodejs
 # include composer
 # include beanstalkd
-# include ngrok
+include ngrok
 # include postgresql
